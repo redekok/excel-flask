@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+flask = "*"
+flask-restx = "*"
+openpyxl = "*"
+koala2 = "*"
+random = "*"
+
+[dev-packages]
+pytest = "*"
+pylint = "*"
+requests-mock = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+test = "python -m pytest"
