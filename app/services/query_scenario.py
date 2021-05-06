@@ -1,4 +1,4 @@
-''' Service for querying an ETEnging scenario'''
+""" Service for querying an ETEnging scenario"""
 
 from json.decoder import JSONDecodeError
 from app.services.etengine_service import EtengineService
@@ -21,9 +21,9 @@ class QueryScenario(EtengineService):
         return self.__handle_response(response)
 
     def __handle_response(self, response):
-        '''
+        """
         Returns a service result, by which we can check later if it's a success or not
-        '''
+        """
         if response.ok:
             return ServiceResult.success(response.json()['gqueries'])
 

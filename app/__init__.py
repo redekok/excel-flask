@@ -1,6 +1,6 @@
-'''
+"""
 Initializes the app and sets up all the routes
-'''
+"""
 
 import os
 
@@ -15,9 +15,9 @@ from config import *
 from app.api import blueprint as api
 
 def create_app(testing=False):
-    '''
+    """
     Create and configure the app
-    '''
+    """
     app = Flask(__name__)
     environment = app.config['ENV']
 

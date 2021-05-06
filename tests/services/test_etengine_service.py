@@ -1,6 +1,6 @@
-'''
+"""
 Tests for the basic etengine connection
-'''
+"""
 
 import requests
 # pylint: disable=import-error

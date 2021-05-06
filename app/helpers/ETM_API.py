@@ -1,6 +1,6 @@
-'''
+"""
 This is now mostly legacy code, all neccesary things should be transformed into a service
-'''
+"""
 
 import sys
 

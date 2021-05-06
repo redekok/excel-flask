@@ -2,7 +2,9 @@
 API namespace that returns a random number within a given range
 """
 from flask_restx import Namespace, Resource, fields
-from random import randint
+# from random import randint
+
+from app.interface import compile
 
 api = Namespace('randomizer', description='Generate random number within given range [min, max]')
 
@@ -47,7 +49,7 @@ class Randomizer(Resource):
         min = args['min']
         max = args['max']
 
-        random = randint(min, max)
+        random = compile_random(min, max)
 
         return {
             'random': random

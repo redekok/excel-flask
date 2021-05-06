@@ -1,6 +1,6 @@
-'''
+"""
 Service to establish a connection to ETEngine
-'''
+"""
 
 import requests
 from flask import current_app

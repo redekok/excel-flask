@@ -1,9 +1,9 @@
-'''
+"""
 Contains the configuration of the app
-'''
+"""
 
 class Config(object):
-    '''Default config settings'''
+    """Default config settings"""
     DEBUG = False
     TESTING = False
 
@@ -14,13 +14,13 @@ class Config(object):
     # }
 
 class ProductionConfig(Config):
-    ''' Use the defaults for production'''
+    """ Use the defaults for production"""
 
 class StagingConfig(ProductionConfig):
-    ''' Use the production defaults for staging'''
+    """ Use the production defaults for staging"""
 
 class DevelopmentConfig(Config):
-    '''Sets debug to true'''
+    """Sets debug to true"""
     DEBUG = True
     # You can replace the ETEngine urls here to point to your local version. Example:
     # ETENGINE = {
@@ -31,5 +31,5 @@ class DevelopmentConfig(Config):
     # here when running the app in Docker.
 
 class TestingConfig(Config):
-    '''Sets testing to true'''
+    """Sets testing to true"""
     TESTING = True
